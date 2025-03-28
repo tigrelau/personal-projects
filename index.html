@@ -5,9 +5,181 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>front-end html activity</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #fffce8;
+            }
+            .container{
+                width: 80%;
+                max-width: 600px;
+                background: #f5e1e8;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            header, section, article, footer {
+                padding: 20px;
+                margin: 10px 0;
+                text-align: center;
+                border-radius: 5px;
+            }
+
+            header {
+                background: #ff1069;
+                color: cornsilk;
+            }
+            
+            section {
+                background: #ff5cc2;
+                color: cornsilk;
+            }
+
+            article {
+                background: #ffa2ef;
+                color: cornsilk;
+            }
+
+            footer{
+                background: #ed61a4;
+                color: cornsilk;
+            }
+
+        </style>
     </head>
     <body>
+        <div class="container">
+            <header>
+             <form
+                <fieldset>
+                    <legend>Personal Informations</legend>
 
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Type your name here..." required>
 
+                    <br><br>
+
+                    <label for="career">Career:</label>
+                    <input type="text" id="career" placeholder="Type your career here..." required>
+
+                    <br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" placeholder="Type your age here..." required>
+
+                    <br><br>
+
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="feminine"> Feminine
+                    <input type="radio" name="gender" value="masculine"> Masculine
+                    <input type="radio" name="gender" value="other"> Other
+
+                    <br><br>
+
+                    <label for="sign">Chose your sign:</label>
+                    <select id="sign">
+                        <option>Aries</option>
+                        <option>Taurus</option>
+                        <option>Gemini</option>
+                        <option>Cancer</option>
+                        <option>Leo</option>
+                        <option>Virgo</option>
+                        <option>Libra</option>
+                        <option>Scorpio</option>
+                        <option>Sagittarius</option>
+                        <option>Capricorn</option>
+                        <option>Aquarius</option>
+                        <option>Pisces</option>
+                     </select>
+
+                     <br><br>
+
+                     <button type="submit" class="submit"> Submit </button>
+                     <button type="reset" class="reset"> Reset </button>
+                
+                </fieldset>
+             </form>
+            </header>
+
+            <section>
+                <h1>Cinnamon Roll Recipe</h1>
+
+                <br>
+
+                <h2>Ingredients:</h2>
+
+                <br>
+
+                <ul>
+                    <h3>For the dough:</h3>
+                    <li>3½ cups of all-purpose flour</li>
+                    <li>¼ cup of granulated sugar</li>
+                    <li>2¼ tsp (1 packet) of active dry yeast</li>
+                    <li>½ tsp of salt</li>
+                    <li>¾ cup of warm milk</li>
+                    <li>¼ cup of unsalted butter, melted</li>
+                    <li>1 large egg</li>
+                </ul>
+
+                <br>
+
+                <ul>
+                    <h3>For the Filling:</h3>
+                    <li>⅓ cup of unsalted butter, softened</li>
+                    <li>¾ cup of brown sugar</li>
+                    <li>2 tbsp of ground cinnamon</li>
+                </ul>
+                
+                <br>
+
+                <ul>
+                    <h3>For the Glaze:</h3>
+                    <li>1 cup of powdered sugar</li>
+                    <li>2 tbsp of milk</li>
+                    <li>½ tsp of vanilla extract</li>
+                </ul>
+
+                <br>
+
+                <h2>Instructions:</h2>
+                <ol>
+                    <li><strong>Prepare the Dough:</strong> In a large bowl, mix the flour, sugar, yeast, and salt. Add warm milk, melted butter and egg. Mix until a dough forms.</li>
+                    <li>Knead the dough on a floured surface for 8-10 minutes until it smooths. Place it in a greased bowl, cover it and let it rise for 1 hour or until it doubled in size.</li>
+                    <li><strong>Make the Filling:</strong> In a small bowl, mix brown sugar and cinnamon</li>
+                    <li>Roll out the dough into a 12x18-inch rectangle. Spread softened butter over it, then sprinkle the cinnamon-sugar mixture evenly.</li>
+                    <li>Roll the dough tightly into a log, then cut it into 12 even slices.</li>
+                    <li>Place the rolls in a greased baking dish, cover and let it rise for 30 minutes.</li>
+                    <li><strong>Bake:</strong>Preheat oven to 375°F (190°C). Bake for 18-22 minutes or until it's golden brown.</li>
+                    <li><strong>Make the Glaze:</strong>Whisk powdered sugar, milk and vanilla until it smooths. Drizzle over warm cinnamon rolls.</li>
+                    <li>Serve warm and enjoy!</li>
+                </ol>
+                <p>Reference: <a href="https://www.loveandlemons.com/cinnamon-rolls/">Cinnamon Rolls</a>.</p>
+            </section>
+
+            <section>
+                <h2>section2</h2>
+                <p>second section content</p>
+            </section>
+
+            <article>
+                <h2>article</h2>
+                <p>article content</p>
+            </article>
+
+            <footer>
+                <h2>footer</h2>
+            </footer>
+        </div>
+        
     </body>
 </html>
